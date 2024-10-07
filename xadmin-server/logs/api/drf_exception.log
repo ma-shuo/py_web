@@ -1,0 +1,2284 @@
+
+2024-10-01 22:00:51 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:00:51 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:00:51 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:00:53 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:00:53 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:00:53 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:01:04 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:01:04 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:01:04 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:01:04 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:01:04 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:01:04 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:05:52 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:05:52 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:05:52 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:05:54 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:05:54 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:05:54 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:06:37 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:06:37 [ERROR] ConfigsView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:06:37 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:06:37 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:06:37 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:06:37 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:07:17 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:17 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:17 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:07:33 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:33 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:07:39 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:39 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:07:39 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-01 22:09:36 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:09:36 [ERROR] BasicLoginView ERROR: Error 8 connecting to redis:6379. nodename nor servname provided, or not known. ret:None
+
+2024-10-01 22:09:36 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 99, in _get
+    return self.client.get(key, default=default, version=version, client=client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 260, in get
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 416, in initial
+    self.check_throttles(request)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 359, in check_throttles
+    if not throttle.allow_request(request, self):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/throttling.py", line 123, in allow_request
+    self.history = self.cache.get(self.key, [])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 92, in get
+    value = self._get(key, default, version, client)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django_redis/client/default.py", line 258, in get
+    value = client.get(key)
+            ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/commands/core.py", line 1822, in get
+    return self.execute_command("GET", name, keys=[name])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 1423, in get_connection
+    connection.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/redis/connection.py", line 364, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 8 connecting to redis:6379. nodename nor servname provided, or not known.
+
+2024-10-02 11:21:20 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:21:20 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:22:04 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 5 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:22:04 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 5 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:23:12 [ERROR] BasicLoginView ERROR: Captcha validation failed. Please try again ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:23:12 [ERROR] BasicLoginView ERROR: Captcha validation failed. Please try again ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:23:20 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 4 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:23:20 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 4 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:04 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:04 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:14 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 5 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:14 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 5 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:53 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 4 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 11:24:53 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 4 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 12:05:33 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 12:05:33 [ERROR] BasicLoginView ERROR: The username or password you entered is incorrect, please enter it again. You can also try 6 times (The account will be temporarily locked for 30 minutes) ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:09:34 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:09:34 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:09:34 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:09:34 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:13:49 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:13:49 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:13:49 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:14:59 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:14:59 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:14:59 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:14:59 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:24:14 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:24:14 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:24:14 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-02 12:24:14 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:34:46 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:48 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:50 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:52 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:54 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:56 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:34:58 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:35:00 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:35:02 [ERROR] Exception inside application: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+system.models.user.UserInfo.DoesNotExist: UserInfo matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 316, in __step_run_and_handle_result
+    result = coro.throw(exc)
+             ^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 62, in __call__
+    return await application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/security/websocket.py", line 37, in __call__
+    return await self.application(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 47, in __call__
+    return await self.inner(dict(scope, cookies=cookies), receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/sessions.py", line 263, in __call__
+    return await self.inner(wrapper.scope, receive, wrapper.send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/auth.py", line 185, in __call__
+    return await super().__call__(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/middleware.py", line 24, in __call__
+    return await self.inner(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/routing.py", line 132, in __call__
+    return await application(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 94, in app
+    return await consumer(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 58, in __call__
+    await await_many_dispatch(
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/utils.py", line 50, in await_many_dispatch
+    await dispatch(result)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/consumer.py", line 73, in dispatch
+    await handler(message)
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/channels/generic/websocket.py", line 179, in websocket_connect
+    await self.connect()
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 75, in connect
+    status, self.user_obj = await token_auth(self.scope)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 291, in __await__
+    yield self  # This tells Task to wait for completion.
+    ^^^^^^^^^^
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/tasks.py", line 385, in __wakeup
+    future.result()
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/asyncio/futures.py", line 203, in result
+    raise self._exception.with_traceback(self._exception_tb)
+  File "/Users/mashuo/.pyenv/versions/3.12.6/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/asgiref/sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/message/notify.py", line 56, in token_auth
+    return True, auth_class.get_user(validated_token)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+
+2024-10-03 07:36:52 [ERROR] ConfigsView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] ConfigsView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserInfoView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserInfoView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserRoutesView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserRoutesView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] ConfigsView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] ConfigsView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserSiteMessageViewSet ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] UserSiteMessageViewSet ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:36:52 [ERROR] DashboardView ERROR: {'detail': ErrorDetail(string='未找到该用户', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')} ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:39:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:39:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:39:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:39:33 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 82, in user_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 93, in user_login_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 76, in user_login_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:41:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 98, in today_operate_total
+    results, percent, count = trend_info(self.filter_queryset(self.get_queryset()), 7)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] DashboardView ERROR: Database returned an invalid datetime value. Are time zone definitions for your database installed? ret:None
+
+2024-10-03 07:41:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 88, in user_registered_trend
+    return ApiResponse(data=trend_info(self.filter_queryset(self.get_queryset()))[0])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/system/views/dashboard.py", line 31, in trend_info
+    dict_count = {d.get('created_time_day').strftime('%m-%d'): d.get('count') for d in data_count}
+                                                                                       ^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/query.py", line 210, in __iter__
+    for row in compiler.results_iter(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1512, in apply_converters
+    value = converter(value, expression, connection)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
+    raise ValueError(
+ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?

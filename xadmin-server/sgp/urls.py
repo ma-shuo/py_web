@@ -2,7 +2,6 @@
 from django.urls import re_path, path
 from rest_framework.routers import SimpleRouter
 
-from data.views import BookView
 
 router = SimpleRouter(False)  # 设置为 False ,为了去掉url后面的斜线
 

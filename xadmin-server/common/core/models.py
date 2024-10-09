@@ -89,11 +89,59 @@ class DbAuditModel(DbBaseModel):
     class Meta:
         abstract = True
 
-class DbSgpBaseModel(DbBaseModel):
-    creator_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='creator_query', null=True, blank=True,
+class DbSgpBaseModel(models.Model):
+    creator = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='creator_query', null=True, blank=True,
                                 verbose_name=_("Creator"), on_delete=models.SET_NULL, related_name='+')
-    modifier_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='modifier_query', null=True,
+    created_time = models.DateTimeField(auto_now_add=True, verbose_name=_("Created time"), null=True, blank=True)
+    modifier = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='modifier_query', null=True,
                                  blank=True, verbose_name=_("Modifier"), on_delete=models.SET_NULL, related_name='+')
+    updated_time = models.DateTimeField(auto_now=True, verbose_name=_("Updated time"), null=True, blank=True)
+    is_deleted = models.BooleanField(
+        _("active"),
+        default=False,
+        help_text=_(
+            "Designates whether this user should be treated as active. "
+            "Unselect this instead of deleting accounts."
+        ),
+    )
+
+    def save(self, *args, **kwargs):
+        if kwargs.get('force_insert', None):
+            filelist = []
+        else:
+            filelist = self.__get_filelist(self._meta.model.objects.filter(pk=self.pk).first())
+        result = super().save(*args, **kwargs)
+        self.__delete_file(filelist, True)
+        return result
+
+    def delete(self, *args, **kwargs):
+        filelist = self.__get_filelist()
+        result = super().delete(*args, **kwargs)
+        self.__delete_file(filelist)
+        return result
+
+    def __delete_file(self, filelist, is_save=False):
+        try:
+            for item in filelist:
+                if is_save:
+                    file = getattr(self, item[0], None)
+                    if file and file.name == item[1]:
+                        continue
+                item[2].name = item[1]
+                item[2].delete(save=False)
+        except Exception as e:
+            logger.warning(f"remove {self} old file {filelist} failed, {e}")
+
+    def __get_filelist(self, obj=None):
+        filelist = []
+        if obj is None:
+            obj = self
+        for field in obj._meta.fields:
+            if isinstance(field, (models.ImageField, models.FileField)) and hasattr(obj, field.name):
+                file_obj = getattr(obj, field.name, None)
+                if file_obj:
+                    filelist.append((field.name, file_obj.name, file_obj))
+        return filelist
     class Meta:
         abstract = True
 

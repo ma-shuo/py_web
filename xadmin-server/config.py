@@ -41,7 +41,6 @@ REDIS_PASSWORD = "12345678"
 
 # 需要将创建的应用写到里面
 XADMIN_APPS = [
-    'data.apps.DataConfig',
     'sgp.apps.SgpConfig'
 ]
 

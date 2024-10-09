@@ -89,6 +89,13 @@ class DbAuditModel(DbBaseModel):
     class Meta:
         abstract = True
 
+class DbSgpBaseModel(DbBaseModel):
+    creator_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='creator_query', null=True, blank=True,
+                                verbose_name=_("Creator"), on_delete=models.SET_NULL, related_name='+')
+    modifier_id = models.ForeignKey(to=settings.AUTH_USER_MODEL, related_query_name='modifier_query', null=True,
+                                 blank=True, verbose_name=_("Modifier"), on_delete=models.SET_NULL, related_name='+')
+    class Meta:
+        abstract = True
 
 def upload_directory_path(instance, filename):
     prefix = filename.split('.')[-1]

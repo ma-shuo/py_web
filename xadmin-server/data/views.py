@@ -13,7 +13,6 @@ from common.core.pagination import DynamicPageNumber
 from common.core.response import ApiResponse
 from data.controller.sgpscore import sgp_score_demo
 from data.models.sgp import SgpScore
-from data.serializers.sgpscore import BookSerializer
 
 logger = logging.getLogger(__name__)
 

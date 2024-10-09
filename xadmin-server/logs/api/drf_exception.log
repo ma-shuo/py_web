@@ -3396,3 +3396,47 @@ Traceback (most recent call last):
     content, status, headers = res['sgp']
                                ~~~^^^^^^^
 KeyError: 'sgp'
+
+2024-10-09 13:36:24 [ERROR] App:(sgp) auto get sub serializer fields failed. Field name `sgp成绩` is not valid for model `SgpScore` in `data.serializers.sgpscore.BookSerializer`.
+
+2024-10-09 13:42:30 [ERROR] BookView ERROR: Cannot resolve keyword 'sgp考试科目' into field. Choices are: description, icon, id, title ret:None
+
+2024-10-09 13:42:30 [ERROR] BookView ERROR: Cannot resolve keyword 'sgp考试科目' into field. Choices are: description, icon, id, title ret:None
+
+2024-10-09 13:42:30 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2195, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1863, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'sgp考试科目' into field. Choices are: description, icon, id, title
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    data = sgp_score_demo()
+           ^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 8, in sgp_score_demo
+    .values('sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1355, in _values
+    clone.query.set_values(fields)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2500, in set_values
+    self.add_fields(field_names, True)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2223, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'sgp考试科目' into field. Choices are: description, icon, id, title

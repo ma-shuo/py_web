@@ -40,7 +40,10 @@ REDIS_PORT = 6379
 REDIS_PASSWORD = "12345678"
 
 # 需要将创建的应用写到里面
-XADMIN_APPS = []
+XADMIN_APPS = [
+    'data.apps.DataConfig',
+    'sgp.apps.SgpConfig'
+]
 
 # 速率限制配置
 DEFAULT_THROTTLE_RATES = {}

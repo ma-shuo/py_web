@@ -3516,3 +3516,1817 @@ Traceback (most recent call last):
   File "/Users/mashuo/work/python-web/xadmin-server/.venv/lib/python3.12/site-packages/django/db/models/functions/datetime.py", line 353, in convert_value
     raise ValueError(
 ValueError: Database returned an invalid datetime value. Are time zone definitions for your database installed?
+
+2024-10-08 11:21:02 [ERROR] MenuView ERROR: {'name': [ErrorDetail(string='该字段不能为空。', code='blank')]} ret:<Response status_code=400, "text/html; charset=utf-8">
+
+2024-10-08 13:03:20 [ERROR] BookView ERROR: Unauthorized authentication ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-08 13:18:13 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:18:13 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:13 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:30 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:18:30 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:30 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:31 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:18:31 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:31 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:41 [ERROR] BookView ERROR: Unauthorized authentication ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-08 13:18:57 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:18:57 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:18:57 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:19 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:19 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:23 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:23 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:23 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:31 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:31 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:31 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:40 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:40 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:40 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:45 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:45 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:45 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:53 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:53 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:53 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:55 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:21:55 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:21:55 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:00 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:22:00 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:00 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:08 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:22:08 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:08 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 446, in retrieve
+    data = super().retrieve(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/generics.py", line 87, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:13 [ERROR] BookView ERROR: 'AnonymousUser' object has no attribute 'dept' ret:None
+
+2024-10-08 13:22:13 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:22:13 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 450, in list
+    data = super().list(request, *args, **kwargs).data
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/modelset.py", line 384, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 215, in filter_queryset
+    return get_filter_queryset(queryset, request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/core/filter.py", line 162, in get_filter_queryset
+    dept_obj = user_obj.dept
+               ^^^^^^^^^^^^^
+AttributeError: 'AnonymousUser' object has no attribute 'dept'
+
+2024-10-08 13:28:32 [ERROR] BookView ERROR: Unauthorized authentication ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-08 13:42:27 [ERROR] Consume msg error: Connection closed by server.
+
+2024-10-08 13:42:27 [ERROR] Consume msg error: Connection closed by server.
+
+2024-10-08 13:42:27 [ERROR] Retry #0 settings subscribe channel error: Error 61 connecting to localhost:6379. Connection refused.
+
+2024-10-08 13:42:27 [ERROR] Retry #0 settings subscribe channel error: Error 61 connecting to localhost:6379. Connection refused.
+
+2024-10-08 13:46:25 [ERROR] BookView ERROR: (1054, "Unknown column 'data_sgpscore.created_time' in 'field list'") ret:None
+
+2024-10-08 13:46:25 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'data_sgpscore.created_time' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 5, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 376, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'data_sgpscore.created_time' in 'field list'")
+
+2024-10-08 13:46:25 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'data_sgpscore.created_time' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 5, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 376, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/backends/mysql/base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/cursors.py", line 330, in _query
+    db.query(q)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/MySQLdb/connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'data_sgpscore.created_time' in 'field list'")
+
+2024-10-08 13:47:16 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:47:16 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 5, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 17, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:47:16 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 5, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 17, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:48:16 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:48:16 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 17, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:48:16 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 17, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:00 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:52:00 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:00 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:03 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:52:03 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:03 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:07 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:52:07 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:07 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:37 [ERROR] BookView ERROR: 'SgpScore' object has no attribute 'name' ret:None
+
+2024-10-08 13:52:37 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 13:52:37 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 39, in get
+    demo()
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 7, in demo
+    print(p)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 379, in __repr__
+    return "<%s %r>" % (self.__class__.__name__, data)
+                                                 ^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/base.py", line 588, in __repr__
+    return "<%s: %s>" % (self.__class__.__name__, self)
+                                                  ^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/models/sgp.py", line 21, in __str__
+    return f"{self.name}({self.code})"
+              ^^^^^^^^^
+AttributeError: 'SgpScore' object has no attribute 'name'
+
+2024-10-08 14:07:29 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:07:29 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:07:29 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:07:40 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:07:40 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:07:40 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:08:44 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:08:44 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:08:44 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 9, in demo
+    .annotate(sgp=Avg('sgp成绩'), num=Count('sgp人员'), type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:05 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:09:05 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:05 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:08 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:09:08 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:08 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:42 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:09:42 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:09:42 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:10:38 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:10:38 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .annotate(type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:10:38 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 10, in demo
+    .annotate(type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:12:39 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:12:39 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 8, in demo
+    SgpScore.objects.values(type='sgp考试科目')
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:12:39 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 8, in demo
+    SgpScore.objects.values(type='sgp考试科目')
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:13:35 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:13:35 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 8, in demo
+    SgpScore.objects.values(type='sgp考试科目')
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:13:35 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 8, in demo
+    SgpScore.objects.values(type='sgp考试科目')
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:14:57 [ERROR] BookView ERROR: QuerySet.annotate() received non-expression(s): sgp考试科目. ret:None
+
+2024-10-08 14:14:57 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 11, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:14:57 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/views.py", line 40, in get
+    data = demo()
+           ^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/data/controller/sgpscore.py", line 11, in demo
+    .values('sgp', 'num', type='sgp考试科目')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1360, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1353, in _values
+    clone = clone.annotate(**expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1630, in annotate
+    return self._annotate(args, kwargs, select=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1640, in _annotate
+    self._validate_values_are_expressions(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 1997, in _validate_values_are_expressions
+    raise TypeError(
+TypeError: QuerySet.annotate() received non-expression(s): sgp考试科目.
+
+2024-10-08 14:36:41 [ERROR] BookView ERROR: Unauthorized authentication ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-08 16:22:40 [ERROR] Consume msg error: Connection closed by server.
+
+2024-10-08 16:22:40 [ERROR] Consume msg error: Connection closed by server.
+
+2024-10-08 16:22:40 [ERROR] Retry #0 settings subscribe channel error: Error 61 connecting to localhost:6379. Connection refused.
+
+2024-10-08 16:22:40 [ERROR] Unexpected exception in receive task
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/channels_redis/pubsub.py", line 303, in _do_receiving
+    message = await self._pubsub.get_message(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 1049, in get_message
+    response = await self.parse_response(block=(timeout is None), timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 922, in parse_response
+    response = await self._execute(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 902, in _execute
+    return await conn.retry.call_with_retry(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/retry.py", line 62, in call_with_retry
+    await fail(error)
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 891, in _disconnect_raise_connect
+    raise error
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/retry.py", line 59, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/connection.py", line 535, in read_response
+    response = await self._parser.read_response(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 82, in read_response
+    response = await self._read_response(disable_decoding=disable_decoding)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/_parsers/resp2.py", line 90, in _read_response
+    raw = await self._readline()
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/_parsers/base.py", line 221, in _readline
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+2024-10-08 16:22:40 [ERROR] Retry #0 settings subscribe channel error: Error 61 connecting to localhost:6379. Connection refused.
+
+2024-10-08 16:22:41 [ERROR] Unexpected exception in receive task
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/connection.py", line 275, in connect
+    await self.retry.call_with_retry(
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/retry.py", line 59, in call_with_retry
+    return await do()
+           ^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/connection.py", line 691, in _connect
+    reader, writer = await asyncio.open_connection(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/asyncio/streams.py", line 48, in open_connection
+    transport, _ = await loop.create_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/asyncio/base_events.py", line 1129, in create_connection
+    raise OSError('Multiple exceptions: {}'.format(
+OSError: Multiple exceptions: [Errno 61] Connect call failed ('::1', 6379, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 6379)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/channels_redis/pubsub.py", line 303, in _do_receiving
+    message = await self._pubsub.get_message(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 1049, in get_message
+    response = await self.parse_response(block=(timeout is None), timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/client.py", line 919, in parse_response
+    await conn.connect()
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/redis/asyncio/connection.py", line 283, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error Multiple exceptions: [Errno 61] Connect call failed ('::1', 6379, 0, 0), [Errno 61] Connect call failed ('127.0.0.1', 6379) connecting to localhost:6379.
+
+2024-10-08 16:39:45 [ERROR] MenuView ERROR: {'name': [ErrorDetail(string='具有 组件英文名称 或 权限标识 的 菜单 已存在。', code='unique')]} ret:<Response status_code=400, "text/html; charset=utf-8">
+
+2024-10-08 16:44:54 [ERROR] RoleView ERROR: {'code': [ErrorDetail(string='具有 角色标识 的 用户角色 已存在。', code='unique')]} ret:<Response status_code=400, "text/html; charset=utf-8">
+
+2024-10-08 16:47:57 [ERROR] DeptView ERROR: {'code': [ErrorDetail(string='具有 部门标识 的 部门 已存在。', code='unique')]} ret:<Response status_code=400, "text/html; charset=utf-8">
+
+2024-10-08 16:52:48 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:52:50 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:52:52 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:53:30 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:55:31 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:56:08 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:56:10 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:57:03 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:57:04 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-08 16:57:11 [ERROR] BookView ERROR: 权限拒绝 ret:<Response status_code=403, "text/html; charset=utf-8">
+
+2024-10-09 08:23:15 [ERROR] BasicLoginView ERROR: 图片验证码校验失败，请稍后重试 ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-09 09:54:15 [ERROR] verify_token token:tmp_token_cfa62e4c3f065499bd49c5854a0a645aec0f23d685d411efaac7  key:TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEyOS4wLjAuMCBTYWZhcmkvNTM3LjM2YXBwbGljYXRpb24vanNvbiwgdGV4dC9wbGFpbiwgKi8qMTI3LjAuMC4x failed
+
+2024-10-09 09:54:15 [ERROR] BasicLoginView ERROR: 临时Token校验失败，请稍后重试 ret:<Response status_code=500, "text/html; charset=utf-8">
+
+2024-10-09 10:08:25 [ERROR] UserRoutesView ERROR: 'sgp' ret:None
+
+2024-10-09 10:08:25 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:08:25 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:08:35 [ERROR] UserRoutesView ERROR: 'sgp' ret:None
+
+2024-10-09 10:08:35 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:08:35 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:09:22 [ERROR] UserRoutesView ERROR: 'sgp' ret:None
+
+2024-10-09 10:09:22 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:09:22 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:09:58 [ERROR] UserRoutesView ERROR: 'sgp' ret:None
+
+2024-10-09 10:09:58 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'
+
+2024-10-09 10:09:58 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 224, in inner
+    return this.process_cache_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/common/base/magic.py", line 261, in process_cache_response
+    content, status, headers = res['sgp']
+                               ~~~^^^^^^^
+KeyError: 'sgp'

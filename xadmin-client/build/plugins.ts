@@ -30,16 +30,17 @@ export function getPluginsList(
     VueI18nPlugin({
       include: [pathResolve("../locales/**")]
     }),
-    checker({
-      typescript: true,
-      vueTsc: true,
-      eslint: {
-        lintCommand: `eslint ${pathResolve("../{src,mock,build}/**/*.{vue,js,ts,tsx}")}`,
-        useFlatConfig: true
-      },
-      terminal: false,
-      enableBuild: false
-    }),
+    // todo 关闭页面lint显示
+    // checker({
+    //   typescript: true,
+    //   vueTsc: true,
+    //   eslint: {
+    //     lintCommand: `eslint ${pathResolve("../{src,mock,build}/**/*.{vue,js,ts,tsx}")}`,
+    //     useFlatConfig: true
+    //   },
+    //   terminal: false,
+    //   enableBuild: false
+    // }),
     /**  Vue Inspector: Press Ctrl(^)+Shift(⇧) in App to toggle the Inspector
      *   按下Command(⌘)+Shift(⇧)，然后点击页面元素会自动打开本地IDE并跳转到对应的代码位置
      * launchEditor: 'appcode' | 'atom' | 'atom-beta' | 'brackets' | 'clion' | 'code' | 'code-insiders' | 'codium'

@@ -65,7 +65,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     'drf_spectacular_sidecar',
     *XADMIN_APPS,
-    'common.apps.CommonConfig',  # 这个放到最后, django ready
+    'common.apps.CommonConfig',# 这个放到最后, django ready
 ]
 
 MIDDLEWARE = [

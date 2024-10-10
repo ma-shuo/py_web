@@ -3440,3 +3440,113 @@ Traceback (most recent call last):
   File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/sql/query.py", line 2223, in add_fields
     raise FieldError(
 django.core.exceptions.FieldError: Cannot resolve keyword 'sgp考试科目' into field. Choices are: description, icon, id, title
+
+2024-10-10 09:56:57 [ERROR] AddScore ERROR: 未授权 ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-10 09:56:57 [ERROR] AddScore ERROR: 未授权 ret:<Response status_code=401, "text/html; charset=utf-8">
+
+2024-10-10 10:34:45 [ERROR] AddScore ERROR: Exam_Type matching query does not exist. ret:None
+
+2024-10-10 10:34:45 [ERROR] AddScore ERROR: Exam_Type matching query does not exist. ret:None
+
+2024-10-10 10:34:45 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 129, in add_data_sql
+    id = Exam_Type.objects.get(exam_type_name=dic['mold'])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+sgp.models.exam_type.Exam_Type.DoesNotExist: Exam_Type matching query does not exist.
+
+2024-10-10 10:44:27 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:44:27 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:44:27 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 179, in add_data_sql
+    student_enrollment_class_mapping_id=s[0],
+                                        ~^^^
+TypeError: 'Student_Enrollment_Class_Mapping' object is not subscriptable
+
+2024-10-10 10:47:15 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:47:15 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:47:15 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 179, in add_data_sql
+    student_enrollment_class_mapping_id=s[0][0],
+                                        ~^^^
+TypeError: 'Student_Enrollment_Class_Mapping' object is not subscriptable
+
+2024-10-10 10:47:53 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:47:53 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:47:53 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 180, in add_data_sql
+    student_enrollment_class_mapping_id=s[0][0],
+                                        ~^^^
+TypeError: 'Student_Enrollment_Class_Mapping' object is not subscriptable
+
+2024-10-10 10:48:57 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:48:57 [ERROR] AddScore ERROR: 'Student_Enrollment_Class_Mapping' object is not subscriptable ret:None
+
+2024-10-10 10:48:57 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 180, in add_data_sql
+    student_enrollment_class_mapping_id=s.id,
+                                        ^^^^
+TypeError: 'Student_Enrollment_Class_Mapping' object is not subscriptable
+
+2024-10-10 11:08:06 [ERROR] AddScore ERROR: get() returned more than one Student -- it returned 2! ret:None
+
+2024-10-10 11:08:06 [ERROR] AddScore ERROR: get() returned more than one Student -- it returned 2! ret:None
+
+2024-10-10 11:08:06 [ERROR] 
+Traceback (most recent call last):
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/code/py_web/xadmin-server/sgp/views/import_add_score.py", line 12, in get
+    add_data_sql(dic=dic)
+  File "/Users/mac/code/py_web/xadmin-server/sgp/controller/add_score.py", line 172, in add_data_sql
+    student_id=Student.objects.get(school_issued_student_id=e['学号']).id,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac/.pyenv/versions/3.12.6/lib/python3.12/site-packages/django/db/models/query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+sgp.models.student.Student.MultipleObjectsReturned: get() returned more than one Student -- it returned 2!

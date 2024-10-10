@@ -31,3 +31,11 @@ def local_now_date_display(fmt='%Y-%m-%d'):
 def local_zero_hour(fmt='%Y-%m-%d'):
     return datetime.strptime(local_now().strftime(fmt), fmt)
 
+def convert_date(date_str):
+    # 将字符串转换为日期对象
+    date = datetime.strptime(date_str, '%Y%m%d')
+    # 将日期对象转换为新的格式
+    new_date_str = date.strftime('%Y-%m-%d')
+    return new_date_str
+
+

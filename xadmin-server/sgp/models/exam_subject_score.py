@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from common.core.models import DbSgpBaseModel
+from decimal import Decimal, ROUND_HALF_UP
+
 
 
 class Exam_Subject_Score(DbSgpBaseModel):

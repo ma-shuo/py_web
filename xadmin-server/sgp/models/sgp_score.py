@@ -5,7 +5,8 @@ from common.core.models import DbSgpBaseModel
 
 class Sgp_Score(DbSgpBaseModel):
     student_enrollment_class_mapping_id = models.BigIntegerField(verbose_name=_("sgp人员"), null=True, blank=True)
-    sgp_score = models.CharField(verbose_name=_("sgp成绩"), max_length=255, null=True, blank=True)
+    # sgp_score = models.CharField(verbose_name=_("sgp成绩"), max_length=255, null=True, blank=True)
+    sgp_score = models.DecimalField(verbose_name=_("sgp成绩"), max_digits=6, decimal_places=2, default=0)
     sgp_exam_subject_mapping_id = models.BigIntegerField(verbose_name=_("sgp考试科目"), null=True, blank=True)
 
     class Meta:

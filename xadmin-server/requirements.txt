@@ -4,7 +4,7 @@ django-cors-headers==4.4.0
 django-filter==24.3
 mysqlclient==2.2.4
 django-redis==5.4.0
-pycryptodomex==3.20.0
+pycryptodomex~=3.21.0
 djangorestframework-simplejwt==5.3.1
 celery==5.4.0
 django-celery-beat==2.7.0
@@ -26,7 +26,7 @@ django-imagekit==5.0.0
 pilkit==3.0
 drf-spectacular==0.27.2
 drf-spectacular-sidecar==2024.7.1
-openpyxl==3.2.0b1
+openpyxl~=3.1.5
 pyzipper==0.3.6
 unicodecsv==0.14.1
 chardet==5.2.0
@@ -39,3 +39,9 @@ geoip2==4.8.0
 ipip-ipdb==1.6.1
 requests==2.32.3
 html2text==2024.2.26
+pandas~=2.2.3
+six~=1.16.0
+alibabacloud_tea_openapi~=0.3.12
+redis~=5.1.1
+pillow~=10.4.0
+asgiref~=3.8.1
